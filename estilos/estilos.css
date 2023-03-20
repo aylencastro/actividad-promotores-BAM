@@ -1,0 +1,474 @@
+/* 
+Paleta de colores:
+    -blanco: FBFEF9
+    -negro: 020202
+    -marrón: 503B31
+    -violáceo: 705D56
+    -celeste: 9097C0
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 9vh;
+    background-color: #503B31;
+    position: fixed;
+    top: 0;
+    z-index: 15;
+}
+
+ul li, ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul li{
+    font-size: 1.7rem;
+    list-style: none;
+    height: 100%;
+    padding: 2vh;
+}
+
+header ul li a:hover{
+    color: #9097C0;
+    text-shadow: 1.5px 1.5px #020202;
+}
+
+a:visited{
+    color: inherit;
+}
+
+#navegador {
+    color: #FBFEF9;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1vh;
+}
+
+.patitaNav{
+    width: 1.5rem;
+    margin: auto 0.5vw;
+}
+
+main{
+    margin-top: 9vh;
+}
+
+.bannerAnimal{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    background-image: url("../imagenes/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: #9097C0;
+    font-size: 3.5rem;
+    text-shadow: 2.5px 2.5px #020202;
+    margin: auto;
+}
+
+h2{
+    margin: 3vh auto 5vh;
+    text-align: center;
+    color: #705D56;
+    font-size: 2rem;
+}
+
+span{
+    text-shadow: 1px 1px #020202;
+    color: #9097C0;
+}
+
+.animales{
+    font-size: 1.5rem;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.animales ul li {
+    margin-bottom: 3vh;
+}
+
+.animales p{
+    text-align: justify;
+    margin-bottom: 5vh;
+}
+
+.imgAnimales{
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgAnimales img{
+    width: 45%;
+    margin-bottom: 5vh;
+}
+
+.imgRefugio{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgRefugio div{
+    width: 70%;
+    height: 70vh;
+    margin: 2vh auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+}
+
+#muchachos{
+    background-image: url("../imagenes/cachorros-jaula-refugio.jpg");
+}
+
+#refu{
+    background-image: url("../imagenes/variada_actividad_en_el_refugio_de_la_asociacion_protectora_de_animales_2.jpg");
+}
+
+@keyframes primerbyn {
+    70% {background-image: url("../imagenes/cachbyn.jpg");}
+    100% {background-image: url("../imagenes/cachorros-jaula-refugio.jpg");}
+}
+
+@keyframes segundobyn {
+    70% {background-image: url("../imagenes/refbyn.jpg");}
+    100% {background-image: url("../imagenes/variada_actividad_en_el_refugio_de_la_asociacion_protectora_de_animales_2.jpg");}
+}
+
+.imgRefugio p{
+    width: 70%;
+    margin: 0 auto 3vh;
+    text-align: justify;
+}
+
+.imgRefugio button{
+    margin: 0 auto 2vh;
+    width: 10vw;
+    height: 10vh;
+    background-color: #705D56;
+    color: #D8A56D;
+    text-shadow: #372625 1.5px 1px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: #372625;
+    cursor: pointer;
+}
+
+.mapaPatitas{
+    width: 70%;
+    margin: 0 auto 5vh;
+}
+
+footer{
+    padding-top: 2vh;
+    width: 100%;
+    height: 12vh;
+    background-color: #9097C0;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+h3{
+    margin: 3vh 2vw 0;
+    font-size: x-large;
+}
+
+#listaAnimales{
+    margin: auto;
+    width: 90%;
+    color: #D8A56D;
+    text-align: center;
+    background-color: #372625;
+    padding: 0.5vh 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#listaAnimales ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#listaAnimales ul li {
+    margin: 2vh 0;
+    list-style: none;
+    padding: 0.5vh;
+    width: 18%;
+    height: 100%;
+}
+
+#listaAnimales ul li:hover {
+   background-color: #FBFEF9;
+   color: #372625;
+   text-shadow: #4f372c 0.5px 0.5px;
+}
+
+#animalitosHistorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animalitoRefugio{
+    margin: 5vh 1vw;
+    width: 30%;
+    background-color: #9097C0;
+    padding: 2vh 3vw;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #503B31 #4f372c;
+}
+
+.animalitoRefugio h3{
+    color: #372625;
+    margin: 0 auto 1.5vh;
+    text-align: center;
+    width: 40%;
+    background-color: #FBFEF9;
+    border-radius: 20px;
+    padding: 1vh;
+    border-style: dotted;
+    border-color: #503B31 #4f372c;
+}
+
+.animalitoRefugio h4{
+    color: #020202;
+    font-weight: 600;
+}
+
+.animalitoRefugio img{
+    width: 100%;
+    margin: 1.5vh auto 0;
+    border-radius: 20px;
+}
+
+#ventaProductos{
+    width: 90%;
+    background-color: #705D56;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8vh auto 5vh;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 2vh 0;
+}
+
+#imgProductos{
+    width: 100% !important;
+    height: 90vh;
+    background-image: url("../imagenes/alimentos/productos.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ventaProductos h2{
+    text-shadow: #503B31 1px 1px;
+    color: #372625;
+}
+
+#ventaProductos h3{
+    color: #D8A56D;
+    text-shadow: #372625 1px 1px;
+    font-size: 2rem;
+}
+
+#ventaProductos h4, #ventaProductos h5, #ventaProductos h6{
+    text-shadow: #372625 1px 1px;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+#ventaProductos h4{
+    font-size: 1.7rem;
+    color: #456F99;
+    text-shadow: #372625 1.5px 1.5px;
+}
+
+#ventaProductos h5{
+    font-size: 1.2rem;
+}
+
+#ventaProductos h6{
+    font-size: 1rem;
+}
+
+#ventaProductos p{
+    font-size: 1rem;
+    color: #6FA1CF;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: 1vh auto;
+}
+
+#ventaProductos ul, #ventaProductos li{
+    margin-left: 1.5vw;
+    margin-top: 1vh;
+    color: #9097C0;
+    list-style-type: disclosure-closed;
+}
+
+#ventaProductos div{
+    width: 45%;
+    background-color: #4f372c;
+    color: #FBFEF9;
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 50vh;
+    padding-top: 0.5vh;
+}
+
+#ventaProductos div img{
+    height: 50vh;
+    margin: 2vh auto 1vh;
+    max-width: 100%;
+}
+
+.btnComprar{
+    margin: 2vh auto;
+    background-color: #D8A56D;
+    color: #372625;
+    font-weight: 700;
+    height: 5vh;
+    border-radius: 20px;
+    border-color: #503B31 #4f372c;
+    width: 20%;
+}
+
+.btnComprar:hover{
+    background-color: #9097C0;
+    cursor: pointer;
+}
+
+.noStock{
+    margin: 2vh auto;
+    background-color: #D8A56D;
+    color: #372625;
+    font-weight: 700;
+    height: 5vh;
+    border-radius: 20px;
+    border-color: #503B31 #4f372c;
+    width: 20%;
+    cursor: not-allowed;
+}
+
+.promo{
+    color: red !important;
+}
+
+#carrito{
+    border-radius: 50%;
+    position: fixed;
+    right: 0.6rem;
+    top: 70%;
+    z-index: 3;
+}
+
+#carrito img{
+    height: 11vh;
+}
+
+#carrito div{
+    width: 1.5vw;
+    height: 3.5vh;
+    background-color: #020202;
+    border-radius: 50%;
+    color: #6FA1CF;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+}
+
+#carrito div p{
+    margin: auto;
+    font-weight: 600;
+}
+
+@media (max-width:1000px){
+    p{
+        font-size: 1.5rem;
+    }
+
+    .animales{
+        width: 85%;
+        font-size: 1.5rem;
+    }
+
+    .animales ul li {
+        margin:0 auto 1vh;
+        width: 50%;
+    }
+
+    .animales p{
+        margin-bottom: 0;
+    }
+
+    .imgAnimales img{
+        width: 95%;
+    }
+
+    .animalitoRefugio{
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .animalitoRefugio div p{
+        font-size: 1.2rem;
+    }
+        
+    .imgRefugio div{
+        height: 50vh;
+    }
+
+    .imgRefugio button {
+        width: 40%;
+        font-size: 1.2rem;
+    }
+    
+    #carrito div{
+        width: 5vw;
+        height: 4vh;
+    }
+
+    #ventaProductos div {
+        width: 80%;
+    }
+    
+    .btnComprar, .noStock{   
+    width: 40%;
+    }
+
+    footer{
+        height: 8vh;
+        font-size: 1rem;
+    }
+}
