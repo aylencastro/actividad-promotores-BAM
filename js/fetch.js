@@ -1,5 +1,5 @@
 // Fetch para Historias Animales
-fetch('../js/animalitos.json')
+fetch('js/animalitos.json')
     .then( respuesta => respuesta.json())
     .then( data => {
         console.log('Animales:', data);
